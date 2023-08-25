@@ -1,0 +1,14 @@
+{
+  "name": "@solarwinds-apm/proxy-test",
+  "private": true,
+  "dependencies": {
+    "@opentelemetry/api": "1.4.x",
+    "solarwinds-apm-new": "npm:solarwinds-apm@14.0.0-pre.2",
+    "solarwinds-apm-old": "npm:solarwinds-apm@^13.1.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:new": "node -r solarwinds-apm-new index.js",
+    "start:old": "node -r solarwinds-apm-old index.js"
+  }
+}
